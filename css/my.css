@@ -1,0 +1,304 @@
+/* 基础 */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+/* #myCarousel {
+	padding-top: 50px;
+} */
+/* 主页 */
+#home {
+    background-color: rgba(0,0,0, .5);
+    background-image: url(../img/background2.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+.home-title h1 {
+    font-family: 'SimHei',;
+    font-size: 4rem;
+    font-size: 64px;
+    
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+    opacity: 1;
+
+    -webkit-transition: opacity 0.2s 1.2s ease-out;
+       -moz-transition: opacity 0.2s 1.2s ease-out;
+         -o-transition: opacity 0.2s 1.2s ease-out;
+            transition: opacity 0.2s 1.2s ease-out;    
+}
+
+.home-title h2 {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.3125rem;
+    font-size: 21px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+
+    -webkit-transition: opacity 0.2s 1.6s ease-out;
+       -moz-transition: opacity 0.2s 1.6s ease-out;
+         -o-transition: opacity 0.2s 1.6s ease-out;
+            transition: opacity 0.2s 1.6s ease-out;    
+}
+
+.home-tittle a {
+    -webkit-transition: opacity 0.2s 1.6s ease-out;
+       -moz-transition: opacity 0.2s 1.6s ease-out;
+         -o-transition: opacity 0.2s 1.6s ease-out;
+            transition: opacity 0.2s 1.6s ease-out;
+}
+
+.home-title.jiji h1,
+.home-title.jiji h2,
+.home-title.jiji a,
+.touch_info.jiji {
+    opacity: 0;
+}
+.touch_info {
+	color: white;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+
+    -webkit-transition: opacity 0.2s 2s ease-out;
+       -moz-transition: opacity 0.2s 2s ease-out;
+         -o-transition: opacity 0.2s 2s ease-out;
+            transition: opacity 0.2s 2s ease-out;  
+}
+/* 下载按钮 */
+.but {
+    display: inline-block;
+    font-family: 'Lato';   
+    font-weight: 300;
+    font-size: 1rem;
+    font-size: 16px;    
+    padding: 0 45px;
+    line-height: 55px;
+    background-color: #d76425;
+
+    -webkit-border-radius: 40px;
+       -moz-border-radius: 40px;
+            border-radius: 40px;
+
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+
+    color: #fff;
+    border: 0;
+
+    -webkit-transition: opacity 0.3s ease;
+       -moz-transition: opacity 0.3s ease;
+         -o-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+}
+.but:hover,
+.but:active {
+    opacity: 0.85;
+    color: #fff;
+}
+
+/* 关于 */
+#about_content{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px; 
+}
+#about_content h2{
+    font-size: 28px;
+    color: black;
+    letter-spacing: 1px; /* 文字间距 */
+}
+#about_content p {
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0 40px 0;
+}
+#about_content h4 {
+    margin-top: 18px; 
+    color: #0059B2; 
+    letter-spacing: 1px; /* 文字间距 */
+}
+#recommend {
+    text-align: center;
+    opacity: 0;
+}
+#recommend h4 {
+    color: #0059B2;
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+/* 作品 */
+.thumbnail {
+	max-height: 250px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+}
+.work-item-inside {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;    
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    /* visibility 属性规定元素是否可见 */
+    
+    -webkit-transition: opacity 0.5s ease-out, visibility 1s ease-out;
+       -moz-transition: opacity 0.5s ease-out, visibility 1s ease-out;
+         -o-transition: opacity 0.5s ease-out, visibility 1s ease-out;
+            transition: opacity 0.5s ease-out, visibility 1s ease-out;
+}
+
+.work-item-inside.visuallyshowed {
+    opacity: 1;
+    visibility: visible;
+}
+
+.work-item-inside h4 {
+    margin-bottom: 27px;
+    font-weight: 400;
+}
+#work_content h2 {
+	margin-top: 100px;
+	font-size: 28px;
+	color: black;
+	text-align: center;
+	letter-spacing: 1px; /* 文字间距 */
+}
+#work_content p {
+	font-size: 18px;
+	color: #999;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 20px 0 40px 0;
+}
+#work_content {
+    transition: 2s;
+    margin-top: -100px;
+}
+
+/* 联系 */
+#contact {
+    text-align: center;
+    margin-top: 100px; 
+}
+#contact h3{
+    font-size: 28px;
+    color: black;
+    letter-spacing: 1px; /* 文字间距 */
+    margin-bottom: 20px;
+}
+#contact .but {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.icon_touch {
+    text-align: center;
+}
+.icon_touch a {
+    margin: 28px;
+}
+#scan {
+    background-color: #d76425;
+    width: 320px;
+    height: 360px;
+    margin: 50px auto;
+    border-radius: 18px;
+}
+.scan_box{
+    opacity: 0; transition: 2s;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 18px;
+}
+.qq {
+    background-image: url(../img/code.png);
+    opacity: 1;
+}
+.Weixin {
+    background-image: url(../img/code2.png);
+    opacity: 1;
+}
+
+/* 响应式布局 */
+@media screen and (min-width: 320px) and (max-width: 779px) {
+	.homepage {
+        margin-left:-24px;
+    }
+    .col {
+        border-left-width:24px;
+        padding:0 0px;
+    }
+    .home-title h1 {
+        font-size: 1.6875rem;
+        font-size: 27px;
+    }
+
+    .home-title h2 {
+        font-size: 0.8125rem;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+    .but_click{
+    	padding: 10px;
+    	border-radius: 20px;
+    	line-height: 20px;
+    	font-size: 8px;
+    }
+    #work_content h2 {
+    	font-size: 24px;
+    }
+    #about_content h2 {
+        font-size: 24px;
+    }
+    .touch_info h4{
+        font-size: 10px;
+    }
+    .work-item-inside p{
+        display: none;
+    }
+}
+html,body{
+
+}
+#footer {
+    margin-top: 50px;
+    background-color: black;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
