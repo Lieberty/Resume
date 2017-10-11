@@ -27,14 +27,14 @@ $(document).ready(function() {
 	});
 
 	// 滚动
-	/*if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 	    skrollr.init({
 			beforerender: function(data) {
 				return data.curTop > data.lastTop;
 			}        
         	
 	    });
-	}*/
+	}
 
 	
 });
